@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Calculator</title>
-  </head>
-  <body>
-    <h1>Calculator</h1>
+<head>
+    <title>BMI Calculator</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-  </body>
+</head>
+<body>
+    <form id="frmBMI">
+    	<div>
+	        <label>Height:</label>
+	        <input type="text" name="height_ft" /> ft
+	        <input type="text" name="height_in" /> in
+        </div>
+
+        <div>
+        	<label>Weight:</label>
+        	<input type="text" name="weight" /> lbs
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+    <div id="response"></div>
+
+
+<br><hr>
+
+
+
+    <form id="frmDegOne">
+      <div>
+          <label>Farhrenheit:</label>
+          <p>Convert Celsius to Farhrenheit:</p>
+          <input type="text" name="F_deg" /> °C
+        </div>
+</form>
+<div id="response1"></div>
+
+
+<br>
+<hr>
+
+<form id="frmDegTwo">
+        <div>
+          <label>Celsius:</label>
+          <p>Convert Farhrenheit to Celsius:</p>
+          <input type="text" name="C_deg" /> °F
+      </div>
+</form>
+<div id="response2"></div>
+
+
+</body>
 </html>
